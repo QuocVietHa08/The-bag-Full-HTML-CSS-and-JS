@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+</head>
+<body>
+    <h2>Image Overlay Title</h2>
+  <div class="slide_show">
+     <div class="slide_animation" >
+    <div class="slide--item">
+      <img src="./img/popular_brand_img_1.webp" alt="">
+    </div>
+
+    <div  class="slide--item">
+      <img src="./img/popular_brand_img_2.webp" alt="">
+    </div>
+
+    <div  class="slide--item">
+      <img src="./img/popular_brand_img_3.webp" alt="">
+    </div>
+
+    <div  class="slide--item">
+      <img src="./img/popular_brand_img_4.webp" alt="">
+    </div>
+
+    <div  class="slide--item">
+      <img src="./img/popular_brand_img_5.webp" alt="">
+    </div >
+
+    <div class="slide--item">
+      <img src="./img/popular_brand_img_6.webp" alt="">
+    </div>
+
+    <div  class="slide--item">
+      <img src="./img/popular_brand_img_7.webp" alt="">
+    </div>
+
+    <div  class="slide--item">
+      <img src="./img/popular_brand_img_9.webp" alt="">
+    </div>
+  </div>
+  </div>
+ 
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1/slick/slick.js"></script>
+  <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slide_animation').slick({
+        slidesToShow : 6,
+        slidesToScroll : 1,
+        autoplay:true,
+        autoplaySpeed : 2000,
+      });
+    });
+  </script>
+</body>     
+</html>

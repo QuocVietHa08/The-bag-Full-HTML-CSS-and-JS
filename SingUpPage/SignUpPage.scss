@@ -1,0 +1,545 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4rem;
+}
+.body {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+// Header contact section include email,number,input placeholder
+.contact {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f6553d;
+  font-family: 'Open Sans';
+  font-size: 1.3rem;
+  color: white;
+  align-items: center;
+  text-align: center;
+  .contact__info {
+    color: white;
+    a {
+      margin-right: 0.2rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .contact__input {
+    position: relative;
+    width: 350px;
+    height: 28px;
+    align-items: center;
+    input {
+      position: absolute;
+      bottom: 0;
+      width: 350px;
+      left: 0;
+      height: 24px;
+      border: none;
+      border-radius: 0.2rem;
+      margin: auto 0;
+    }
+  }
+
+  .contact__link {
+    padding: 0;
+    margin: 0;
+    color: white;
+    .contact__link__list {
+      display: flex;
+      list-style: none;
+      li {
+        margin-right: 3px;
+        text-decoration: none;
+        height: 100%;
+        a {
+          text-decoration: none;
+          color: white;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+// ---------headẻr section----------------------------
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+  .header__img {
+    width: 190px;
+    heigth: 80px;
+  }
+
+  .header__icon {
+    width: 190px;
+    heigth: 80px;
+    padding: 0 15px;
+    display: flex;
+  }
+}
+.header {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgb(212, 173, 173);
+  padding: 5px 0;
+  position: sticky;
+  background-color: white;
+  z-index: 4;
+  top: 0px;
+}
+
+.header__container {
+  width: 1200px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-left: 80px;
+}
+
+.header__img {
+  width: 148px;
+  height: 80px;
+  padding: 0 15px;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  width: 760px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header__menu__list {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__menu__list__children {
+  display: block;
+  margin-top: 30px;
+  padding: 0;
+  width: 200px;
+  height: 248x;
+  font-weight: normal;
+  list-style: none;
+  border: 1px solid whitesmoke;
+}
+
+.header__list__children {
+  font-family: 'Open sans';
+  padding-top: 10px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 248px;
+  display: none;
+}
+
+.header__children {
+  background-color: white;
+  display: block;
+  position: relative;
+  width: 198px;
+  height: 41px;
+  margin-left: 6px;
+}
+
+.header__menu__list.has_child:hover .header__list__children {
+  display: block;
+}
+
+.header__children:hover {
+  background-color: whitesmoke;
+}
+
+// --------------header icon section-------------------
+.header__icons {
+  width: 190px;
+  height: 80px;
+  font-family: 'Open Sans';
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  .preson {
+    height: 90px;
+  }
+  &:hover .header__icon__login {
+    display: block;
+    animation: HoverMove;
+    animation-duration: 0.25s;
+  }
+}
+.header__icon__login {
+  position: absolute;
+  width: 200px;
+  height: 83px;
+  list-style: none;
+  background-color: white;
+  border-top: 1px solid plum;
+  margin: 0;
+  padding: 0;
+  top: 83px;
+  left: -60px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .header__login {
+    color: black;
+    width: 198px;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.header__status {
+  width: 270px;
+  height: 110px;
+  border-top: 2px solid #f7553d;
+  position: absolute;
+  top: 80px;
+  left: -160px;
+  display: none;
+  background-color: white;
+  .shopping__status {
+    width: 268px;
+    height: 38px;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .header__return {
+    width: 252px;
+    height: 53px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 1px thin #eee;
+
+    line-height: normal;
+    text-align: center;
+    .return__text {
+      background-color: #f7553d;
+      width: 175px;
+      height: 33px;
+      border: none;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .text {
+      width: 90px;
+      height: 17px;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+.cart:hover .header__status {
+  display: block;
+  animation: HoverMove;
+  animation-duration: 0.35s;
+}
+@keyframes HoverMove {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+// ---------login -status section------------------
+.login-account {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-family: 'Open Sans';
+  .login__main__section {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.login__list__items {
+  position: relative;
+  font-family: 'Open Sans';
+  box-sizing: border-box;
+
+  a {
+    color: #878787;
+    text-decoration: none;
+    font-family: 'Open Sans';
+  }
+}
+
+.login__list {
+  font-size: 1.4rem;
+  display: flex;
+  width: 1140px;
+  height: 19px;
+  position: relative;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 auto;
+}
+.add__symbol::before {
+  content: '/';
+  padding-right: 8px;
+}
+// --------------------sign up form css section
+
+.SignUP__section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  font-family: 'Open Sans';
+  font-size: 1.4rem;
+}
+.SignUp__container {
+  width: 1140px;
+  height: 437px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.SignUp__form {
+  width: 475px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  color: #333;
+  font-size: 1.4rem;
+  font-family: 'Open Sans';
+}
+.text {
+  display: flex;
+  font-weight: bold;
+  p {
+    font-weight: 900;
+    font-size: 1.7rem;
+    padding-left: 10px;
+  }
+  i {
+    margin-top: 3px;
+  }
+}
+
+.name {
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  input {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    height: 35px;
+  }
+}
+.SignUp__btn {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  .button {
+    width: 85px;
+    padding-top: 5px;
+    height: 35px;
+    background-color: #f7553d;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+  }
+  p {
+    margin-bottom: 6px;
+  }
+}
+
+//--------button section-----------------------
+.body__btn-social {
+  width: 1120px;
+  height: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.body__email__info {
+  width: 250px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.body__email__info > p {
+  padding: 0;
+  margin: 0 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.social__input {
+  width: 414px;
+  height: 34px;
+  display: flex;
+}
+
+.social__input > input {
+  width: 80%;
+  margin-right: 3px;
+  border: 1px solid #eeeeee;
+}
+
+.validate__btn {
+  width: 55px;
+  height: 32px;
+  background-color: #f7553d;
+  border-radius: 2px;
+}
+
+.social__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.social-icon {
+  width: 65px;
+  height: 40px;
+  border-radius: 2px;
+  margin-left: 2px;
+  cursor: pointer;
+}
+// ------footer section -----------
+.footer {
+  position: relative;
+  background-color: #232323;
+  color: #ffffff;
+  border-top: 5px solid #000;
+  font-famliy: 'Open Sans';
+  display: block;
+  .footer__main__form {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .footer__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+    .footer__main__info {
+      font-size: 1.4rem;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-weight: normal;
+      font-family: 'Open Sans';
+      p {
+        margin: 14px 0;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        magin: 14px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin: 5px 0;
+          a {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__contact {
+    padding: 10px 0;
+
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 14px;
+    .footer__contact__container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+      width: 100%;
+      .footer__contact__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        justify-content: space-around;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        .main__list {
+          display: flex;
+          list-style: none;
+          .footer__intro__link {
+            &:before {
+              content: '/';
+              position: absolute;
+              top: 0;
+              left: 8px;
+            }
+          }
+        }
+
+        .footer__location {
+          right: 0;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

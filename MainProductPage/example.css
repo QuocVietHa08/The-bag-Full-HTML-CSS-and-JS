@@ -1,0 +1,143 @@
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+.img-affect {
+  width: 285px;
+  height: 321px;
+  position: relative;
+}
+
+.img__container {
+  position: relative;
+  padding: 0 15px;
+  font-size: 1.4rem;
+  color: #333333;
+  font-family: 'Open Sans';
+}
+
+.img__info {
+  text-align: center;
+}
+
+.info__hover {
+  width: 240px;
+  position: relative;
+  display: block;
+  opacity: 0;
+}
+
+.eye__shopping__cart {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+}
+
+.item__container {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info {
+  background-color: #f7553d;
+  width: 120px;
+  height: 20px;
+  color: white;
+  font-size: 1.1rem;
+  position: relative;
+  top: -50px;
+  text-decoration: none;
+  display: none;
+}
+
+.hover__affect {
+  width: 50%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  -webkit-box-shadow: #cccccc;
+          box-shadow: #cccccc;
+}
+
+.hover__affect i {
+  color: black;
+}
+
+.hover__affect:hover .info {
+  display: block;
+}
+
+.hover__affect:hover i {
+  color: #f7553d;
+}
+
+.hover__affect .fa .hover__box .spin__hover {
+  display: block;
+}
+
+.hover__box {
+  position: absolute;
+  top: 14px;
+  left: 55px;
+  width: 10px;
+  height: 10px;
+  background-color: #f7553d;
+  display: block;
+  -webkit-transform: rotate(132deg);
+          transform: rotate(132deg);
+}
+
+.spin__box {
+  position: absolute;
+  top: 14px;
+  left: 55px;
+  width: 10px;
+  height: 10px;
+  background-color: #f7553d;
+  -webkit-transform: rotate(132deg);
+          transform: rotate(132deg);
+  display: block;
+}
+
+.img__container:hover .info__hover {
+  display: block;
+  top: -55px;
+  opacity: 1;
+  -webkit-animation: HoverMove 500ms;
+          animation: HoverMove 500ms;
+}
+
+@-webkit-keyframes HoverMove {
+  0% {
+    top: -5px;
+  }
+  100% {
+    top: -60px;
+  }
+}
+
+@keyframes HoverMove {
+  0% {
+    top: -5px;
+  }
+  100% {
+    top: -60px;
+  }
+}
+/*# sourceMappingURL=example.css.map */

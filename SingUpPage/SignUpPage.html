@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up page</title>
+    <link rel="stylesheet" href="./SignUpPage.css" />
+    <link rel="stylesheet" href="./SignUpPage.css.map" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header__info include email,number,input place -->
+    <section class="contact">
+      <div class="contact__info">
+        <strong class="contact__number">
+          <i class="fas fa-phone"></i>
+          <a href="#">19001234</a>
+        </strong>
+        <strong
+          class="contact__email"
+          style="height: 100%; border-left: 1px solid white;"
+        >
+          <i class="fas fa-envelope" style="margin-left: 3px;"></i>
+          <a href="#">quocvietha08@gmail</a>
+        </strong>
+      </div>
+
+      <div class="contact__input">
+        <input type="text" placeholder="What do you want" class="input_form" />
+      </div>
+
+      <div class="contact__link">
+        <ul class="contact__link__list">
+          <li class="contact__list1">
+            <a href="./IntroductionPage/introduction.html">Giới thiệu</a>
+          </li>
+          <li class="contact__list2" style="border-left: 1px solid white;">
+            <a href="./IntroductionPage/introduction.html">Liên Hệ</a>
+          </li>
+          <li class="contact__list3" style="border-left: 1px solid white;">
+            <a href="./IntroductionPage/introduction.html">Hệ thống cửa hàng</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Header brand image include image,menu.. -->
+    <section class="header">
+      <div class="header__container">
+        <div class="header__img">
+          <a href="#">
+            <img
+              src="https://theme.hstatic.net/1000074340/1000538604/14/logo.png?v=30"
+              alt="picture1"
+            />
+          </a>
+        </div>
+
+        <div class="header__menu">
+          <ul class="header__menu header__list">
+            <li class="header__menu__list has_child">
+              San Pham
+              <i class="fas fa-caret-down"></i>
+              <div class="header__list__children">
+                <ul class="header__menu__list__children">
+                  <li class="header__children">Loc San Pham</li>
+                  <li class="header__children">San Pham Theo Mau</li>
+                  <li class="header__children">Sp co thong so ki thuat</li>
+                  <li class="header__children">Sp thuong hieu</li>
+                  <li class="header__children">Trang tap chi</li>
+                  <li class="header__children">He thong cua hang</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__menu__list has_child">
+              Túi xách tay
+              <i class="fas fa-caret-down"></i>
+              <div class="header__list__children">
+                <ul class="header__menu__list__children">
+                  <li class="header__children">Co lon</li>
+                  <li class="header__children">Co trung</li>
+                  <li class="header__children">Co nho</li>
+                  <li class="header__children">vi</li>
+                  <li class="header__children">Culte</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__menu__list">Túi cầm tay</li>
+            <li class="header__menu__list">Túi tamiky</li>
+            <li class="header__menu__list">Tạp chí</li>
+            <li class="header__menu__list">Hệ thống của hàng</li>
+          </ul>
+        </div>
+
+        <div class="header__icons">
+          <div class="header__icon person" style="height: 90px;">
+            <img
+              style="max-height: 50%; max-width: 50%;"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLX_HwFOfaGFR9VUrOCMlflk-jZf2ZuH7jrA&usqp=CAU"
+              alt=""
+            />
+            <ul class="header__icon__login">
+              <li class="header__login">
+                <a href="LoginPage.html">Đăng nhập</a>
+              </li>
+
+              <li class="header__login">
+                <a href="#">Đăng kí</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__icon cart">
+            <img
+              style="max-height: 40%; max-width: 40%;"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <div class="header__status">
+              <div class="shopping__status">Chưa có sản phẩm trong giỏ</div>
+              <div class="header__return">
+                <div class="return__text">
+                  <a href="#">
+                    <span class="text">Vào cửa hàng</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- login status -->
+    <section class="login_account">
+      <div class="login__main__section">
+        <ul class="login__list">
+          <li class="login__list__items">
+            <a href="#">Trang Chủ</a>
+          </li>
+          <li class="login__list__items">
+            <a href="#" class="add__symbol" style="padding-left: 20px;"
+              >Tài Khoản</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Sign Up form html section -->
+    <div class="SignUp__section">
+      <div class="SignUp__container">
+        <div class="SignUp__form">
+          <div class="SignUp__status">
+            <div class="text">
+              <i class="fas fa-user-alt"></i>
+              <p>Người dùng mới?</p>
+              <p>Đăng kí tài khoản</p>
+            </div>
+
+            <form>
+              <div class="name">
+                <h3>Họ</h3>
+                <input type="text" class="SignUp__input" />
+              </div>
+
+              <div class="name">
+                <h3>Tên</h3>
+                <input type="text" class="SignUp__input" />
+              </div>
+
+              <div class="name">
+                <h3>Email</h3>
+                <input type="email" class="SignUp__input" />
+              </div>
+
+              <div class="name">
+                <h3>Mật khẩu</h3>
+                <input type="password" class="SignUp__input" />
+              </div>
+
+              <div class="name">
+                <h3>Nhập lại mật khẩu</h3>
+                <input type="password" class="SignUp__input" />
+              </div>
+            </form>
+            <div class="SignUp__btn">
+              <div class="button">
+                <p>Đăng ký</p>
+              </div>
+              <a href="#">Quay lại trang đăng nhập</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- resiger email and social button -->
+    <section class="body__btn-social">
+      <div class="body__email__info">
+        <i class="fas fa-envelope fa-2x"></i>
+        <p>ĐĂNG KÍ NHẬN TIN KHUYẾN MÃI</p>
+      </div>
+
+      <div class="social__input">
+        <input
+          type="text"
+          placeholder="Nhập email của bạn"
+          style="font-size: 1.4rem;"
+        />
+        <div class="validate__btn">
+          <i
+            class="fa fa-paper-plane fa-2x"
+            aria-hidden="true"
+            style="padding-left: 20px; padding-top: 5px;"
+          ></i>
+        </div>
+      </div>
+
+      <div class="social__icons">
+        <ul class="social__list">
+          <li class="social-icon" style="background-color: #3b5897;">
+            <i
+              class="fab fa-facebook-f fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+          <li class="social-icon" style="background-color: #01acee;">
+            <i
+              class="fab fa-twitter fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+          <li class="social-icon" style="background-color: #dd4b39;">
+            <i
+              class="fab fa-google-plus-g fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+          <li class="social-icon" style="background-color: #dd4b45;">
+            <i
+              class="fab fa-youtube fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__main__form">
+        <div class="footer__container">
+          <div class="footer__row">
+            <div class="footer__main__info">
+              <a href="/index.html">
+                <img
+                  src="https://theme.hstatic.net/1000074340/1000538604/14/footer_logo.png?v=30"
+                  alt=""
+                />
+              </a>
+              <p>Túi xách - Phụ kiện không thể <br />thiếu của phái đẹp</p>
+            </div>
+
+            <div class="footer__main__info">
+              <h4>Liên hệ</h4>
+              <p>Kênh mua sẵm trực tuyến <br />giá hàng đâu Việt Nam</p>
+
+              <i class="fas fa-map-marker-alt"></i>
+              <span>61/2 Quang Trung,P.10 Q.Gò Vấp,TP.HCM</span>
+              <div style="height: 10px;"></div>
+
+              <img
+                src="//theme.hstatic.net/1000074340/1000538604/14/pre_footer_icon_phone.png?v=30"
+                alt=""
+              />
+              <a href="#">(91) 8547 632521</a>
+              <div style="height: 10px;"></div>
+              <img
+                src="//theme.hstatic.net/1000074340/1000538604/14/pre_footer_icon_email.png?v=30"
+                alt=""
+              />
+              <a href="#">hello@egany.com</a>
+            </div>
+            <div class="footer__main__info">
+              <div class="footer__product__list img__info">
+                <h4 style="margin-bottom: 10px;">Giới thiệu</h4>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Sản Phẩm</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Túi xách tay</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Túi cầm tay</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Túi kamicy</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Tạp chí</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hệ thống cửa hàng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__main__info">
+              <div class="footer__guide footer__product__list img__info">
+                <h4>Hướng dẫn</h4>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Câu hỏi thường gặp</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn cách tính size</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Chính sách đổi trả</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn bảo quản</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn thanh toán</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn mua hàng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__main__info">
+              <div class="footer__certification">
+                <h4>Chứng nhận</h4>
+                <img
+                  src="//theme.hstatic.net/1000074340/1000538604/14/payment_img.png?v=30"
+                  alt=""
+                />
+                <br />
+                <a href="">
+                  <img
+                    src="//theme.hstatic.net/1000074340/1000538604/14/register_img.png?v=30"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__contact">
+            <div class="footer__contact__container">
+              <div class="footer__contact__items">
+                <div class="footer__sponsor">
+                  Bản quyền thuộc về <a href="#">EGANY</a>
+                  .
+                  <a href="#">Powered by Haravan</a>
+                  <ul class="main__list" style="text-align: left; padding: 0;">
+                    <li class="mainpage">
+                      <a href="/index.html">Trang chủ</a>
+                    </li>
+                    <li class="mainpage" style="padding-left: 15px;">
+                      <a href="#" class="footer__intro__link">/ Giới thiệu</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- footer  section describe about product location-->
+                <div class="footer__location">
+                  EGANY Co.Ltd - 12345 Quang Trung, Q.Gò Vấp,TP.HCM |
+                  Email:hello@gany.com
+                  <br />
+                  <a href="#">| Hotline</a>
+                  <a href="#">1900.123.789</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

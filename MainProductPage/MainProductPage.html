@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./MainProductPage.js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Product Page</title>
+    <link rel="stylesheet" href="./MainProductPage.css" />
+    <link rel="stylesheet" href="./MainProductPage.css.map" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- Header__info include email,number,input place -->
+    <section class="contact">
+      <div class="contact__info">
+        <strong class="contact__number">
+          <i class="fas fa-phone"></i>
+          <a href="#">19001234</a>
+        </strong>
+        <strong
+          class="contact__email"
+          style="height: 100%; border-left: 1px solid white;"
+        >
+          <i class="fas fa-envelope" style="margin-left: 3px;"></i>
+          <a href="#">quocvietha08@gmail</a>
+        </strong>
+      </div>
+
+      <div class="contact__input">
+        <input type="text" placeholder="What do you want" class="input_form" />
+      </div>
+
+      <div class="contact__link">
+        <ul class="contact__link__list">
+          <li class="contact__list1">
+            <a href="./IntroductionPage/introduction.html">Giới thiệu</a>
+          </li>
+          <li class="contact__list2" style="border-left: 1px solid white;">
+            <a href="./IntroductionPage/introduction.html">Liên Hệ</a>
+          </li>
+          <li class="contact__list3" style="border-left: 1px solid white;">
+            <a href="./IntroductionPage/introduction.html">Hệ thống cửa hàng</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Header brand image include image,menu.. -->
+    <section class="header">
+      <div class="header__container">
+        <div class="header__img">
+          <a href="#">
+            <img
+              src="https://theme.hstatic.net/1000074340/1000538604/14/logo.png?v=30"
+              alt="picture1"
+            />
+          </a>
+        </div>
+
+        <div class="header__menu">
+          <ul class="header__menu header__list">
+            <li class="header__menu__list has_child">
+              San Pham
+              <i class="fas fa-caret-down"></i>
+              <div class="header__list__children">
+                <ul class="header__menu__list__children">
+                  <li class="header__children">Loc San Pham</li>
+                  <li class="header__children">San Pham Theo Mau</li>
+                  <li class="header__children">Sp co thong so ki thuat</li>
+                  <li class="header__children">Sp thuong hieu</li>
+                  <li class="header__children">Trang tap chi</li>
+                  <li class="header__children">He thong cua hang</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__menu__list has_child">
+              Túi xách tay
+              <i class="fas fa-caret-down"></i>
+              <div class="header__list__children">
+                <ul class="header__menu__list__children">
+                  <li class="header__children">Co lon</li>
+                  <li class="header__children">Co trung</li>
+                  <li class="header__children">Co nho</li>
+                  <li class="header__children">vi</li>
+                  <li class="header__children">Culte</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__menu__list">Túi cầm tay</li>
+            <li class="header__menu__list">Túi tamiky</li>
+            <li class="header__menu__list">Tạp chí</li>
+            <li class="header__menu__list">Hệ thống của hàng</li>
+          </ul>
+        </div>
+
+        <div class="header__icons">
+          <div class="header__icon person" style="height: 90px;">
+            <img
+              style="max-height: 50%; max-width: 50%;"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLX_HwFOfaGFR9VUrOCMlflk-jZf2ZuH7jrA&usqp=CAU"
+              alt=""
+            />
+            <ul class="header__icon__login">
+              <li class="header__login">
+                <a href="LoginPage.html">Đăng nhập</a>
+              </li>
+
+              <li class="header__login">
+                <a href="#">Đăng kí</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__icon cart">
+            <img
+              style="max-height: 40%; max-width: 40%;"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAdVBMVEUAAAD///+tra2lpaXDw8Pj4+M+Pj6KiorY2Njp6enR0dH6+vr19fXIyMhdXV0dHR1xcXGcnJx6enqzs7Pt7e2Tk5Nvb28pKSlkZGSOjo5UVFS+vr5CQkJ+fn7T09M1NTVJSUkZGRkSEhIWFhYtLS0kJCRhYWFu6FMnAAAHTklEQVR4nN2da3vaMAyFHe6U0tICHb3QQtf2///ElT1jg9hxLB0RSTsf9i2T3gKKoxzLofqtyd1iNyrW7mF9VblUOPwzGQWybp+1U+fogLumwx50r507Q9+4dzzaEB60k6crVFdc2hB62tmTFapPPm6YaadPVRgAtOFOO32qwj2C+6adPlXhB4IbVtr5EwXBhjDXzp8oENfbjxfE3WjnTxSIe6udP1EgbrjWBqAJxXVWq1DctTYATSjulzYATeEd5NUGoCnsQNypNgFJ4RHEHWgTkBQmIK6vWhWqJwz3SZuApFBNMdyf2gQkfVfWOcbrqlYdbiRAt+pbrhqwv++bszGA+6iNQNFxmTC/G+eUafG8LHvWtZyvaritfxbnenkm4b5o5wtrdE3A3WpnK6BVOe5SO1cB7WfFuEPtXCV0X4w7005VRKvi59WddqoS6hfjIisRM9oU4/4PtSp8FuP+F7WK0GvSTlRC+3LcnXauAropx0WbWha0Lsd91s5VQPNyXLDJY0LXhLa4dq64PooXkd+60c4W1gMFl2muM6QeBdd/rRpScFfa2cIqf7w/6FY7XVBPNFzvtWpNw2VbY41oTsMF366oa0bDdV6rDgZOktlAO2FMWyruRjtjSEsqru9aNaXiuq5V+4qKe62dMqIvMm6Feb111afjeq5Vr3TcvnbOgGZ0XMzFoapRRcd1XKvGDNzqQztrtgYc3IV21mytOLhua9WfTRNE3FfttLlasHDdPhT1eLjIflBNDXm40A5JRc14uD3tvHk6uq6puKi5XUlHTz0V16nh6Li7i7wxxqc58rh3j4zr0hz5ecyejOvScLRl47o0HC3ZuC5r1ZCNWzHm46jrb/J0XIfmyH/bUOm4DmtVH8B1WKteAVyHz4D/BgQwcHfa2VM1Ovmo6LjuatUYwnVnODrZpcjAdWeOPJlDxBkVgE4n6FonqXNwwf3cXWsB4jozR55OxOPgOqtVExDXWa06TZ011UQbgKSz0Q8sXFfmyLPBHixcV7XqbMQUCxeaLdm1zoYdsnA9mSM/zjLnDWDSZiBoe544C9eR4Wh5ljgP15E5cniWOA/XkTnyPHEerh/DUW0WHnNWnBtzZG0qKxPXTa2qTfhn4rqpVbX54ExcL+bIl1reTFwvtWpcy5s71vKnNkiZ6qPSuLhOzJH1QXhcXB/myPd62lxcH7UqOpeDi+vjJX50LAd7Au+bNkqJJvWs2bgualWUNRvXgzkynj/LxvVgjoynC7NxPayr4jn3/GHhDmpVfIoBH9e+OTJxng4f136tShx2xse1X6uWcdLAoH9tmlYNEznzcc2bI1MfER/Xeq26kcW1bo5MHQ0F4Fo3R6aOGUXOJNHmaVEyZQB3pw2UVfKIUQTXtjkyeV4Dgmu6VvWTKSO4lmvVNp0ydHySNlOz0p8tiLvTpmrQovGsTQg3M+V20esrqXeVOSYXws2YIxt+O9qCcDPmyFH71RrCTnrL/H6E8hMWllbGHPnafrWCMNyMOdLmMeIYbsYcmVyyqgvDzZgjP9uvVhBYUjJTbk0eVQvieqtVIG7GcNS0bFUViJsxR0Zvzi0IxM3Uqo/2q7sXuvrJbJB7HnSqeaKLLo5ryhz50FoeUVxj5sjNhXGtGY4+Mg+7ArjmXuLXTZ+yuPZOD8ge9wzjPmjjRcp9nWFce+bI3KMnjGutVuWrM4xrrlZlHz3xnpI9w9FFcc2ZIyMTsyiuuVoVOyElcc0ZjnJnl+O45ozcsRNSEtfcBrlck0wA19iU2x+5XAVwjZkjsw1uAVxjtSrhhBTFNfYSP9vDkcA1NeU2t8iQwTVljkw5IWVxTRmOUk5IWVxbQ1LGF328N3jscn0XqyTuyuAxJ80+GBTXpnOusV6BuK1LjLfpUF7T1mrR1H7FcAs+2/yNgaeCiUq79JUYbkmTub7bX0AlJ42kw0K4ZT3m3PNn12ER3NL7LRAipdL5QqlrkVz2hXFz3RSGSg/NSX2dAdzynpyoCad8yZoI28mmuOxbKqpKv1PJsHxcwkr5FqCri/CSZh9fzcel2BRSO5iYonTx47BsXFK/VfDeSxkOHa+duxk1kNgnzRRpjR6H7WiQBIR4KlorIbqcnQituxyNJ+GKtjNNbioKbYqv2ELyCwvLxqUNWM82fymi/ZWjsGzcHSmumP2V9leOwnb06brHBb9VSmE7GuAktqwCw7JxaR6F5N5hhbBsXFovHWOUC8tOhDRwXK4/B4bl/90p7/0Et4xhYfm4lF9R4/bhrsPycQnuwK/2/62jsEARKb8nCD7dg2EB3OKTXBo6+hphkVtE6Vv7kh0vHYXtYJCE+FsTICyEW9QVlGvcCITF1jslu4gEb0J4WHB51/47EmvbiIRFV7NtgS+0i5cbFl68Z79Y72JPQkJh8WeVTOHY5HeoKYQVeDSbNa1zMoYfAbHCijyJDlPviy6/GZ0RVujBe3p3PiRzM5D5f6XDyvUZrgeP25vR6GWx7V/k5iMS9hfLJIFHLMWwQAAAAABJRU5ErkJggg=="
+              alt=""
+            />
+            <div class="header__status">
+              <div class="shopping__status">Chưa có sản phẩm trong giỏ</div>
+              <div class="header__return">
+                <div class="return__text">
+                  <a href="#">
+                    <span class="text">Vào cửa hàng</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="login_account">
+      <div class="login__main__section">
+        <ul class="login__list">
+          <li class="login__list__items">
+            <a href="#">Trang Chủ</a>
+          </li>
+          <li class="login__list__items">
+            <a href="#" class="add__symbol" style="padding-left: 20px;"
+              >Tài Khoản</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="body">
+      <div class="body__container">
+        <div class="img">
+          <img
+            src="https://theme.hstatic.net/1000074340/1000538604/14/col_all_banner.jpg?v=30"
+            alt=""
+          />
+        </div>
+        <div class="main--body">
+          <div class="filter__section">
+            <div class="main__filter--section">
+              <div class="filter__main__section">
+                <div class="filter__body">
+                  <!-- filter body container -->
+                  <!-- content starts here -->
+                  <p>
+                    <button
+                      class="btn btn-primary product__filter__main"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseExample"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Lọc sản phẩm
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <!-- start of card-body -->
+                      <!-- product brand -->
+                      <p>
+                        <button
+                          class="btn btn-primary product__brand__button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseExample_thuonghieu"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Thương Hiệu
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample_thuonghieu">
+                        <div class="card card-body">
+                          <!-- list item -->
+                          <ul class="product__brand__list">
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Cabwer</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Kamicy</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Gesunry</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Heti</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>DJIL</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Mlleco</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Balana</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Handle</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>K&K</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- product kind -->
+                      <p>
+                        <button
+                          class="btn btn-primary product__brand__button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseExample_kind"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Loại sản phẩm
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample_kind">
+                        <div class="card card-body">
+                          <!-- list item -->
+                          <ul class="product__brand__list">
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Túi xách tay</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Túi nữ xách tay</p>
+                            </li>
+                            <!--  -->
+                            <li class="product__brand__item">
+                              <input type="checkbox" />
+                              <p>Túi Xách Kamicy</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- product color -->
+                      <p>
+                        <button
+                          class="btn btn-primary product__brand__button"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseExample_color"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Màu sác
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample_color">
+                        <div class="card card-body">
+                          <!-- list item -->
+                          <ul class="product__brand__list">
+                            <li class="product__brand__item">
+                              <div class="box-color">
+                                <div class="small__box"></div>
+                                <span class="span-color">Đỏ</span>
+                              </div>
+                            </li>
+                            <!--  -->
+                          </ul>
+                        </div>
+                      </div>
+                      <!--end of card body -->
+                    </div>
+                  </div>
+                  <!-- contend ends here -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__section">
+            <div class="product__heading">
+              <div class="numbers__product" style="padding: 0 15px;">
+                <p style="font-size: 1.4rem;">
+                  Có
+                  <span class="numbers_of_product" s style="color: red;"
+                    >49</span
+                  >
+                  sản phẩm
+                </p>
+              </div>
+              <div class="product__filter">
+                <label style="font-size: 1.4rem; padding-right: 10px;"
+                  >Sắp xếp theo</label
+                >
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown"
+                    data-display="static"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="
+                      background-color: white;
+                      color: #afafaf;
+                      width: 120px;
+                      height: 30px;
+                      border: 1px solid #cccccc;
+                      font-size: 1.4rem;
+                    "
+                  >
+                    Mới nhất
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left"
+                  >
+                    <button class="dropdown-item" type="button">
+                      Giá:tăng dần
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Giá: giảm dần
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Tên:A-Z
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Tên:Z-A
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Cũ nhất
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Mới nhất
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Bán chạy nhất
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__body">
+              <div class="product__list">
+                <div class="img-affect">
+                  <!-- products section  -->
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/zhqjxu9j_edbdb86519844a3991c822fb22a20603_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Wristlet cầm tay khóa gài....</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >700,000đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/xzipegfc_91d05bfa91b74e838a7d1d5a84b17cc0_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Writstlet cầm tay khóa cài</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >700,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/rxcqlip1_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Writstlet cầm tay khóa gài ....</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >700, 000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/nlwgytju_0ab74a2366e0469283811ca5c8bdae21_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Writstlet cầm tay khóa gài</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >700, 000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/hbousmet_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Wristlet cầm tay khóa giài</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >700,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/mrptdob5_a7696a7b87f84f608577a79a41a92d59_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Wristlet cầm tay khóa gài</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >700,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/yhbeious_9dcd6377daec4822a8b37887194df2a7_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Wristlet cầm tay khóa gài</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >700,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/dbssfxha_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi Crossbody khóa gài</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >560,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/58tqikdv_74261682d75b4795bd449b70e2483df4_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi Crossbody khóa gài</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >560,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/vsbw75yj_3611522df27f42e2b949c91e62811217_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi Cote da bò quai hợp kim...</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >560,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/dctztg96_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi cote da bò quai hợp kim</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >560,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/7znkm6qj_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi cote da bò quai hợp kim</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >560,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/mgwbwezalarge_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi nữ quai xích đeo chéo</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,350,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/glwdj7bk_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Clutch cầm tay dang phong cách</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,960,000 đ</ins
+                      >
+                      <!-- <del>2,699,000 đ</del> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/oxac9hho_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi xách kamicy</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,999,000 đ</ins
+                      >
+                      <del>2,699,000 đ</del>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/eghdiwls_1106d896c975442f9b93e1cf2942759e_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi xách kamicy</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,999,000 đ</ins
+                      >
+                      <del>2,699,000 đ</del>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/eghdiwls_1106d896c975442f9b93e1cf2942759e_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi xách kamicy</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,999,000 đ</ins
+                      >
+                      <del>2,699,000 đ</del>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/augaj9yp_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi xách kamicy</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,999,000 đ</ins
+                      >
+                      <del>2,699,000 đ</del>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/rptgnmjx_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi xách kamicy</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,999,000 đ</ins
+                      >
+                      <del>2,699,000 đ</del>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="img-affect">
+                  <div class="img__container">
+                    <img
+                      src="https://product.hstatic.net/1000074340/product/x3oqzfgz_medium.jpg"
+                      alt=""
+                      style="margin: 0 auto;"
+                    />
+                    <div class="img__info">
+                      <div class="info__hover">
+                        <div class="eye__shopping__cart">
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-shopping-cart"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                ></i>
+
+                                <div class="info">
+                                  <p>Them san pham</p>
+                                  <div class="hover__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="hover__affect">
+                            <div class="hover__icon">
+                              <a href="#" class="item__container">
+                                <i
+                                  class="fa fa-eye"
+                                  aria-hidden="true"
+                                  style="margin-top: 18px;"
+                                  ;
+                                ></i>
+
+                                <div class="info">
+                                  <p>Xem san pham</p>
+                                  <div class="spin__box"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" style="font-weight: bold; color: black;"
+                        >Túi xách kamicy</a
+                      >
+                      <br />
+                      <ins style="text-decoration: none; color: red;"
+                        >1,999,000 đ</ins
+                      >
+                      <del>2,699,000 đ</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!------- product button section  --------->
+              <div class="product__body__btn">
+                <div
+                  class="btn-toolbar"
+                  role="toolbar"
+                  aria-label="Toolbar with button groups"
+                >
+                  <div
+                    class="btn-group mr-2"
+                    role="group"
+                    aria-label="First group"
+                  >
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    <button type="button" class="btn btn-secondary">3</button>
+                    <!-- <button type="button" class="btn btn-secondary">4</button> -->
+                  </div>
+
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-secondary">>></button>
+                  </div>
+                </div>
+              </div>
+              <!-- content section  -->
+              <div class="product__body__content">
+                <div class="product__content">
+                  <h2>Túi xách - thời trang đường phố không thể thiếu</h2>
+                  <p>
+                    Ngày nay, dù ở lứa tuổi nào thì ai cũng cần trang bị cho
+                    mình một chiếc túi xách. Nó là một trong những thứ không thể
+                    thiếu của một người phụ nữ thời hiện đại. Chỉ một chút thay
+                    đổi nhỏ trong ăn mặc, phụ kiện, hẳn bạn sẽ nhận thấy sự chú
+                    ý của mọi người xung quanh dành cho bạn đúng không nào? Đó
+                    là lý do vì sao một người phụ nữ không thể chỉ có một chiếc
+                    túi xách cho mình, đó cũng là lý do cho mọi sự phàn nàn của
+                    các đức ông chồng với tủ đồ thời trang không bao giờ là đủ
+                    của chị em phụ nữ. Thật tốt khi bạn chỉ cần tìm kiếm một cửa
+                    hàng thời trang phù hợp và lựa chọn cho mình một bộ quần áo
+                    cùng phụ kiện kết hợp đúng theo như những gì bạn nghĩ. Dù
+                    bạn là một học sinh, hoặc là một người phụ nữ với cả công
+                    việc chính và nghề tay trái, bạn cũng cần phải trang bị
+                    những chiếc túi xách thiết yếu này. Túi xách thực sự là một
+                    vật dụng không thể thiếu đối với người phụ nữ hiện đại bởi
+                    vì bạn sẽ sử dụng nó để mang theo tất cả những thứ mà bạn
+                    cần cho hoạt động hằng ngày như là đồ dùng cá nhân, đồ trang
+                    điểm, chìa khóa, ví tiền, thẻ tín dụng, bút bi, sổ tay và
+                    những thứ khác. Ngày nay, có rất nhiều kiểu dáng thiết kế và
+                    phong cách cho bạn lựa chọn vì thế sẽ không khó để bạn có
+                    thể tìm được một chiếc túi mà nó sẽ phù hợp với cá tính và
+                    phong cách thời trang của bạn. Túi xách cho từng tính cách
+                    và phong cách khác nhau Những loại túi xách khác nhau thì sẽ
+                    được sử dụng theo cách khác nhau. Hầu hết túi cầm tay và túi
+                    xách đeo vai thường dành để đến trường hoặc công sở. Bởi vì
+                    những loại túi này có nhiều ngăn và các ngăn đều rỗng rãi.
+                    Ngoài ra còn có các loại túi xách nhỏ có thể được sử dụng
+                    cho các buổi họp, dạ tiệc, ...và các loại túi cầm tay khác
+                    phù hợp hơn cho các sự kiện quan trọng. Vì vậy, bạn hãy mau
+                    chóng sắm sửa thêm những chiếc túi xách mới vào bộ sưu tập
+                    của mình nhé!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------footer section ---------------- -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
