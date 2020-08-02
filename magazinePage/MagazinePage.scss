@@ -1,0 +1,581 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4rem;
+}
+.body {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+//  ----- header contact section include email ,phone number , input placeholder
+.contact {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f6553d;
+  font-family: 'Open Sans';
+  font-size: 1.3rem;
+  color: white;
+  align-items: center;
+  text-align: center;
+  .contact__info {
+    color: white;
+    a {
+      margin-right: 0.2rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .contact__input {
+    position: relative;
+    width: 350px;
+    height: 28px;
+    align-items: center;
+    input {
+      position: absolute;
+      bottom: 0;
+      width: 350px;
+      left: 0;
+      height: 24px;
+      border: none;
+      border-radius: 0.2rem;
+      margin: auto 0;
+    }
+  }
+
+  .contact__link {
+    padding: 0;
+    margin: 0;
+    color: white;
+    .contact__link__list {
+      display: flex;
+      list-style: none;
+      li {
+        margin-right: 3px;
+        text-decoration: none;
+        height: 100%;
+        a {
+          text-decoration: none;
+          color: white;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+// --header login menu include brand image menu login section and more
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+  .header__img {
+    width: 190px;
+    heigth: 80px;
+  }
+
+  .header__icon {
+    width: 190px;
+    heigth: 80px;
+    padding: 0 15px;
+    display: flex;
+  }
+}
+.header {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgb(212, 173, 173);
+  padding: 5px 0;
+  position: sticky;
+  background-color: white;
+  z-index: 4;
+  top: 0px;
+}
+
+.header__container {
+  width: 1200px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-left: 80px;
+}
+
+.header__img {
+  width: 148px;
+  height: 80px;
+  padding: 0 15px;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  width: 760px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header__menu__list {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__menu__list__children {
+  display: block;
+  margin-top: 30px;
+  padding: 0;
+  width: 200px;
+  height: 248x;
+  font-weight: normal;
+  list-style: none;
+  border: 1px solid whitesmoke;
+}
+
+.header__list__children {
+  font-family: 'Open sans';
+  padding-top: 10px;
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 248px;
+  display: none;
+}
+
+.header__children {
+  background-color: white;
+  display: block;
+  position: relative;
+  width: 198px;
+  height: 41px;
+  margin-left: 6px;
+}
+
+.header__menu__list.has_child:hover .header__list__children {
+  display: block;
+}
+
+.header__children:hover {
+  background-color: whitesmoke;
+}
+
+// ------------icon section------------------
+
+.header__icons {
+  width: 190px;
+  height: 80px;
+  font-family: 'Open Sans';
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  .preson {
+    height: 90px;
+  }
+  &:hover .header__icon__login {
+    display: block;
+    animation: HoverMove;
+    animation-duration: 0.25s;
+  }
+}
+.header__icon__login {
+  position: absolute;
+  width: 200px;
+  height: 83px;
+  list-style: none;
+  background-color: white;
+  border-top: 1px solid plum;
+  margin: 0;
+  padding: 0;
+  top: 83px;
+  left: -60px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .header__login {
+    color: black;
+    width: 198px;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.header__status {
+  width: 270px;
+  height: 110px;
+  border-top: 2px solid #f7553d;
+  position: absolute;
+  top: 80px;
+  left: -160px;
+  display: none;
+  background-color: white;
+  .shopping__status {
+    width: 268px;
+    height: 38px;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .header__return {
+    width: 252px;
+    height: 53px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 1px thin #eee;
+
+    line-height: normal;
+    text-align: center;
+    .return__text {
+      background-color: #f7553d;
+      width: 175px;
+      height: 33px;
+      border: none;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .text {
+      width: 90px;
+      height: 17px;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+.cart:hover .header__status {
+  display: block;
+  animation: HoverMove;
+  animation-duration: 0.35s;
+}
+@keyframes HoverMove {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+//  -----------breakcrumb with boostrap-----------------
+.breadcrumb__container {
+  background-color: #fff;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  .breadcrumb {
+    background-color: #fff;
+    max-width: 1140px;
+    margin: 0 auto;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+//------body -title section -------
+.body__container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+.body__firstLook {
+  max-width: 1140px;
+  margin: 0 auto;
+  .body__title {
+    margin-left: 10px;
+    font-family: 'Open Sans';
+  }
+}
+
+// -----slide show css section-------------
+.body__firstSlide {
+  max-width: 1140px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-item {
+  width: 635px;
+  padding: 0 5px;
+}
+.slide__picture {
+  width: 100%;
+}
+// ----recent post section---------------------
+.recent-post {
+  width: 475px;
+  margin: 0 5px;
+  h4 {
+    font-family: 'Open Sans';
+    font-size: 2.1rem;
+    margin: 0px 0px 14px;
+    padding: 0px 0px 5px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+  }
+}
+// -----post info list section ----------------------
+.post__info__list {
+  width: 445px;
+  height: 80px;
+  .post__info__item {
+    display: flex;
+    padding-bottom: 20px;
+  }
+}
+.post__info__picture {
+  width: 135px;
+  height: 80px;
+  margin-right: 10px !important;
+  .post__picture {
+    max-width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+.post__info__content {
+  width: 296px;
+  height: 61px;
+  font-family: 'Open Sans';
+  .post__content__list {
+    font-size: 1.3rem;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+// ------body blog section--------------
+.body__blog {
+  max-width: 1140;
+  margin: 20px auto;
+}
+.body__blog_row {
+  max-width: 1140px;
+  margin: 0 auto;
+  font-family: 'Open Sans';
+  font-size: 1.4rem;
+}
+.body__blog__col {
+  position: relative;
+  margin-bottom: 20px;
+  align-items: center;
+
+  font-size: 1.4rem;
+}
+.blog__col__text {
+  position: relative;
+
+  background: #fff;
+  display: inline-block;
+  padding: 0 5px;
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  a {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    display: inline-block;
+    padding: 0 5px;
+    color: #000;
+    font-weight: 600;
+  }
+}
+.blog__col__text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 19px;
+  width: 1140px;
+  height: 1px;
+  background: #333333;
+}
+.blog__col__text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 1140px;
+  height: 2px;
+  background: #333333;
+}
+// -------body blog item flex-----------------
+.body__blog__list {
+  width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.body__col__content {
+  padding-top: 5px;
+
+  width: 198px;
+  height: 305px;
+  font-size: 1.4rem;
+  columns: #333333;
+  font-family: 'Open Sans';
+  .body__col__content__img {
+    width: 198px;
+    height: 305px;
+    img {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+
+  .body__col__content__info {
+    margin-top: 10px;
+    h4 {
+      font-weight: bold;
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
+}
+// ------body life main content---------
+.body__life__section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  .body__life__main__img {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    .body__life__main__content {
+      width: 332px;
+      height: 310px;
+      margin-right: 30px;
+      h4 {
+        font-size: 2.1rem;
+        margin: 14px 0;
+        font-weight: bold;
+        color: black;
+      }
+      p {
+        font-size: 1.4rem;
+        margin: 14px 0;
+        color: black;
+      }
+    }
+    .body__life__main__pic {
+      width: 207px;
+      height: 310px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  .body__life__list__content {
+    .body__life__list__item {
+      width: 540px;
+      height: 100px;
+      display: flex;
+      margin-top: 20px;
+      .body__life__img {
+        width: 135px;
+        height: 100px;
+        overflow: hidden;
+        img {
+          max-width: 100%;
+        }
+      }
+      .body__life__list__text {
+        margin-left: 10px;
+        h5 {
+          font-size: 1.7rem;
+        }
+        span {
+          font-style: 1.4rem;
+          columns: #999999;
+        }
+      }
+    }
+  }
+}
+.body__life__main__img {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 9px;
+  .body__life__main__content {
+    width: 332px;
+    height: 310px;
+    margin-right: 30px;
+    h4 {
+      font-size: 2.1rem;
+      margin: 14px 0;
+      font-weight: bold;
+      color: black;
+    }
+    p {
+      font-size: 1.4rem;
+      margin: 14px 0;
+      color: black;
+    }
+  }
+  .body__life__main__pic {
+    width: 207px;
+    height: 310px;
+    background-size: cover;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+// --------------body girl section style------------------
+.body__girl__section {
+  width: 1140px;
+  margin: 10px auto;
+  position: relative;
+  top: 100px;
+
+  .body__girl__container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
