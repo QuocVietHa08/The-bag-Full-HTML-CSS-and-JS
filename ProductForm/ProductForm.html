@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Form</title>
+    <!-- bootstrap link  -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <!-- slick section  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/The Bag Project/slick-1.8.1/slick/slick.css"
+    />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/The Bag Project/slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="ProductForm.css" />
+    <link rel="stylesheet" href="./ProductForm.css.map" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header__info include email,number,input place -->
+    <section class="contact">
+      <div class="contact__info">
+        <strong class="contact__number">
+          <i class="fas fa-phone"></i>
+          <a href="#">19001234</a>
+        </strong>
+        <strong
+          class="contact__email"
+          style="height: 100%; border-left: 1px solid white;"
+        >
+          <i class="fas fa-envelope" style="margin-left: 3px;"></i>
+          <a href="#">quocvietha08@gmail</a>
+        </strong>
+      </div>
+
+      <div class="contact__input">
+        <input type="text" placeholder="What do you want" class="input_form" />
+      </div>
+
+      <div class="contact__link">
+        <ul class="contact__link__list">
+          <li class="contact__list1">
+            <a href="./IntroductionPage/introduction.html">Giới thiệu</a>
+          </li>
+          <li class="contact__list2" style="border-left: 1px solid white;">
+            <a href="./IntroductionPage/introduction.html">Liên Hệ</a>
+          </li>
+          <li class="contact__list3" style="border-left: 1px solid white;">
+            <a href="./IntroductionPage/introduction.html">Hệ thống cửa hàng</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Header brand image include image , menu..... -->
+    <section class="header">
+      <div class="header__container">
+        <div class="header__img">
+          <a href="#">
+            <img
+              src="https://theme.hstatic.net/1000074340/1000538604/14/logo.png?v=30"
+              alt="picture1"
+            />
+          </a>
+        </div>
+
+        <div class="header__menu">
+          <ul class="header__menu header__list">
+            <li class="header__menu__list has_child">
+              San Pham
+              <i class="fas fa-caret-down"></i>
+              <div class="header__list__children">
+                <ul class="header__menu__list__children">
+                  <li class="header__children">Loc San Pham</li>
+                  <li class="header__children">San Pham Theo Mau</li>
+                  <li class="header__children">Sp co thong so ki thuat</li>
+                  <li class="header__children">Sp thuong hieu</li>
+                  <li class="header__children">Trang tap chi</li>
+                  <li class="header__children">He thong cua hang</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__menu__list has_child">
+              Túi xách tay
+              <i class="fas fa-caret-down"></i>
+              <div class="header__list__children">
+                <ul class="header__menu__list__children">
+                  <li class="header__children">Co lon</li>
+                  <li class="header__children">Co trung</li>
+                  <li class="header__children">Co nho</li>
+                  <li class="header__children">vi</li>
+                  <li class="header__children">Culte</li>
+                </ul>
+              </div>
+            </li>
+            <li class="header__menu__list">Túi cầm tay</li>
+            <li class="header__menu__list">Túi tamiky</li>
+            <li class="header__menu__list">Tạp chí</li>
+            <li class="header__menu__list">Hệ thống của hàng</li>
+          </ul>
+        </div>
+
+        <div class="header__icons">
+          <div class="header__icon person" style="height: 90px;">
+            <img
+              style="max-height: 50%; max-width: 50%;"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLX_HwFOfaGFR9VUrOCMlflk-jZf2ZuH7jrA&usqp=CAU"
+              alt=""
+            />
+            <ul class="header__icon__login">
+              <li class="header__login">
+                <a href="LoginPage.html">Đăng nhập</a>
+              </li>
+
+              <li class="header__login">
+                <a href="#">Đăng kí</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__icon cart">
+            <img
+              style="max-height: 40%; max-width: 40%;"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <div class="header__status">
+              <div class="shopping__status">Chưa có sản phẩm trong giỏ</div>
+              <div class="header__return">
+                <div class="return__text">
+                  <a href="#">
+                    <span class="text">Vào cửa hàng</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- body section    -->
+    <section class="body">
+      <div class="breadcrumb__section">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Túi nữa xách tay</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Cluth cầm tay dang phong thư Milenco
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="product__container">
+        <div class="product__img">
+          <div class="img__main__container">
+            <img
+              src="https://product.hstatic.net/1000074340/product/glwdj7bk_large.jpg"
+              alt=""
+            />
+          </div>
+          <!-- slick slide section -->
+          <div class="img__slick__slide">
+            <div class="slick__img__container">
+              <div>
+                <div class="slick__img__item">
+                  <img
+                    src="https://product.hstatic.net/1000074340/product/glwdj7bk_large.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div>
+                <div class="slick__img__item">
+                  <img
+                    src="https://product.hstatic.net/1000074340/product/3b2prc8o_large.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div>
+                <div class="slick__img__item">
+                  <img
+                    src="https://product.hstatic.net/1000074340/product/pnfqmpej_large.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- item 4 -->
+              <div>
+                <div class="slick__img__item">
+                  <img
+                    src="https://product.hstatic.net/1000074340/product/v2khnw9r_large.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__info">
+          <h1 style="font-weight: bold;">Tui birkin o khoa Cabwer do</h1>
+          <p style="font-size: 0.8rem; margin-bottom: 5px;">SKU: 8594568</p>
+          <div class="product__info__price">
+            <ins style="color: red; font-size: 1.8rem; margin-bottom: 0.5rem;"
+              >1,240,000d</ins
+            >
+          </div>
+          <!-- product counter -->
+          <div class="product__counter">
+            <label for="" style="font-weight: bold;"> <h3>So Luong</h3></label>
+            <div class="product__counter__section">
+              <div class="qty">
+                <!-- <span class="minus bg-dark">-</span> -->
+                <input type="number" class="count" name="qty" value="1" />
+                <!-- <span class="plus bg-dark">+</span> -->
+              </div>
+            </div>
+          </div>
+          <!-- BUy now section  -->
+          <div class="buy__now">
+            <div class="buy__now-text">
+              <a href="#" class="buy__now-label">
+                MUA NGAY
+                <br />
+                <span> Giao tan noi hoac nhan o cua hang</span>
+              </a>
+            </div>
+          </div>
+        
+      </div>
+  <!-- shipping status -->
+        <div class="product__ship__status">
+          <div class="shipping__container">
+            <div class="shipping__time">
+
+              <h5 style="color:#3A8F0C; font-weight: bold; margin-left: 5px;">
+                SE CO TAI NHA BAN
+              </h5>
+              <span style="margin-left:5px;"> tu 1-5 ngay lam viec</span>
+            </div>
+            <div class="shipping__list">
+              <a href="#">
+                <div class="shipping__icon">
+                  <i class="fas fa-shipping-fast fa-2x"></i>
+                </div>
+                <div class="shipping__content">
+                  <p>MIEN PHI VAN CHUYEN</p>
+                  <P>Tren toan quoc</P>
+                </div>
+              </a>
+            </div>
+            <!-- item 2 -->
+            <div class="shipping__list">
+              <a href="#">
+                <div class="shipping__icon">
+                  <img src="//theme.hstatic.net/1000074340/1000538604/14/pd_policies_2.png?v=30" alt="">
+                </div>
+                <div class="shipping__content">
+                  <p>ĐỔI TRẢ MIÊN PHÍ</p>
+                  <P>Đổi trả miên phí 7 ngày</P>
+                </div>
+              </a>
+            </div>
+            <!-- item 3 -->
+            <div class="shipping__list">
+              <a href="#">
+                <div class="shipping__icon">
+                  <img src="//theme.hstatic.net/1000074340/1000538604/14/pd_policies_3.png?v=30" alt=""> 
+                </div>
+                <div class="shipping__content">
+                  <p>THANH TOÁN</p>
+                  <P>Thanh toán khi nhận hàng</P>
+                </div>
+              </a>
+            </div>
+            <!-- item 4 -->
+            <div class="shipping__list">
+              <a href="#">
+                <div class="shipping__icon">
+                  <img src="//theme.hstatic.net/1000074340/1000538604/14/pd_policies_4.png?v=30">
+                </div>
+                <div class="shipping__content">
+                  <p>HỖ TRỢ MUA NHANH</p>
+
+                  <P>
+                    <strong style="font-size: 1.8rem; color:red;">1800 xxxxxx</strong>
+                    <br>
+                    "từ 8:30 - 21:30 mỗi ngày"
+                  </P>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+    <!-- Descrition about product -->
+    <section class="product__description">
+      <!--product desc  -->
+        <div class="product__desc__main">
+          <div class="product__desc__content">
+            <div class="product__desc__container">
+              <div class="desc__div">
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'London')">
+                    CHI TIET SAN PHAM
+                  </button>
+      
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">
+                    HUONG DAN BAO QUAN
+                  </button>
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">
+                    BINH LUAN /DANH GIA
+                  </button>
+                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                    CHINH SACH DOI TRA
+                  </button>
+                </div>
+      
+                <div id="London" class="tabcontent" style="display: block;">
+                  <p>
+                    Túi birkin ổ khóa Cabwer phong cách Anh quốc, kiểu dáng cổ điển,
+                    thanh lịch, thích hợp trong mọi hoàn cảnh sử dụng: đến công sở, đi
+                    chơi, dự party...; chất liệu chống nước, chống ma sát tốt, mềm
+                    mại, giúp bạn nổi bật ngay từ cái nhìn đầu tiên
+                    <br />
+                    - Túi birkin ổ khóa Cabwer phong cách Anh quốc; kiểu dáng cổ điển
+                    nhưng toát lên thần thái cao sang, quý phái của người dùng.
+                    <br />
+                    - Chất liệu: PU nhập khẩu Italy cao cấp, vân da rõ ràng, đàn hồi
+                    tốt, chống thấm nước, chịu ma sát, dễ bảo quản. Lớp lót polyester
+                    mềm nhẹ, thoáng khí.
+                    <br />
+                    - Khóa kéo trơn tru, thao tác dễ dàng; ổ khóa ngũ kim sáng bóng,
+                    chống oxy hóa; đường may chắc chắn, tỉ mỉ.
+                    <br />
+                    - Phân bố các ngăn khoa học, thoải mái sắp xếp vật dụng cá nhân:
+                    ví tiền, điện thoại, mỹ phẩm...
+                    <br />
+                    - Đáy túi nạm đinh chống trầy xước, hạn chế mài mòn, tăng độ bền
+                    bỉ.
+                  </p>
+                </div>
+      
+                <div id="Paris" class="tabcontent"style="display: block;" ></div>
+      
+                <div id="Tokyo" class="tabcontent" style="display: block;">
+                  <p>
+                    EGA TheBags sẽ thực hiện việc đổi/trả hàng và hoàn tiền cho khách
+                    hàng trong những trường hợp sau.
+                    <br />
+                    <strong>
+                      Sản phẩm EGA TheBags giao không đúng đơn đặt hàng </strong
+                    ><br />
+                    Bạn nghĩ rằng sản phẩm giao cho bạn không đúng với đơn đặt hàng?
+                    Hãy liên hệ với chúng tôi càng sớm càng tốt, hệ thống của chúng
+                    tôi sẽ kiểm tra nếu hàng của bạn bị gửi nhầm. Trong trường hợp đó,
+                    chúng tôi sẽ thay thế đúng mặt hàng bạn yêu cầu (khi có hàng).
+                    <br />
+                    <strong>
+                      Sản phẩm mua rồi nhưng không ưng ý </strong
+                    ><br />
+      
+                    Người mua có thể trả hàng khi không vừa ý trong vòng 7 ngày kể từ
+                    ngày nhận hàng, EGA TheBags.vn sẽ đổi sản phẩm cho khách. Sản phẩm
+                    muốn đổi hoặc trả yêu cầu phải là sản phẩm không có dấu hiệu đã
+                    qua sử dụng và còn nguyên tem, mác, nguyên đai kiện ban đầu Sản
+                    phẩm mua bị lỗi Quý khách vui lòng kiểm tra sản phẩm trước khi
+                    thanh toán. Trong trường hợp sản phẩm bị hư hại trong quá trình
+                    vận chuyển, quý khách vui lòng từ chối và gửi lại sản phẩm cho EGA
+                    TheBags.vn. Đồng thời thông báo cho Trung tâm hỗ trợ khách hàng
+                    0123456789, EGA TheBags.vn sẽ gửi cho quý khách mặt hàng thay thế.
+                    <br />
+                    <strong>
+                      Điều kiện đổi trả hàng
+                    </strong>
+                    <br />
+      
+                    Điều kiện về thời gian đổi trả: trong vòng 7 ngày kể từ khi nhận
+                    được hàng. Điều kiện về sản phẩm: - Hàng hóa còn đầy đủ các bộ
+                    phận, không có dấu hiệu sử dụng quá nhiều hoặc hỏng hóc. - Có đầy
+                    đủ các giấy tờ kèm theo (hóa đơn mua hàng, catalogue...) và các
+                    linh kiện, tặng phẩm kèm theo (nếu có). - Khách hàng chịu chi phí
+                    vận chuyển cho việc đổi, trả hàng. - Trường hợp không đủ các điều
+                    kiện trên thì quyền quyết định đổi, trả hàng thuộc về EGA
+                    TheBags.vn
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__buy__now">
+
+            <!-- buy now section -->
+            <div class="product__buy__now__container">
+              <div class="product__buy__now__main">
+                <h1>Tui brikin o khoa Cabwer hong dam </h1>
+                <p>SKU: 8594568</p>
+                <div class="buy__now__price">
+                  <ins>1,240,000d</ins>
+                </div>
+                <div class="buy__now__button">
+                  <a href="#">
+                    MUA NGAY
+                  </a>
+                  <span></span>
+                </div>
+                <div class="buy__now__contact">
+                  <div class="contact__img">
+                    <img src="https://theme.hstatic.net/1000074340/1000538604/14/pd_policies_4.png?v=30" alt="">
+                  </div>
+                  <div class="contact__content">
+                    <p style=" color: black;
+                    font-weight: bold;
+                    font-size: 2rem;">Ho tro mua nhanh</p>
+                    <p><strong style="color:red;font-size:2rem;font-weight: bold;">1800 xxx xxx</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!--  -->
+     <!-- resiger email and social button -->
+     <section class="body__btn-social">
+      <div class="body__email__info">
+        <i class="fas fa-envelope fa-2x"></i>
+        <p>ĐĂNG KÍ NHẬN TIN KHUYẾN MÃI</p>
+      </div>
+
+      <div class="social__input">
+        <input
+          type="text"
+          placeholder="Nhập email của bạn"
+          style="font-size: 1.4rem;"
+        />
+        <div class="validate__btn">
+          <i
+            class="fa fa-paper-plane fa-2x"
+            aria-hidden="true"
+            style="padding-left: 20px; padding-top: 5px;"
+          ></i>
+        </div>
+      </div>
+
+      <div class="social__icons">
+        <ul class="social__list">
+          <li class="social-icon" style="background-color: #3b5897;">
+            <i
+              class="fab fa-facebook-f fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+          <li class="social-icon" style="background-color: #01acee;">
+            <i
+              class="fab fa-twitter fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+          <li class="social-icon" style="background-color: #dd4b39;">
+            <i
+              class="fab fa-google-plus-g fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+          <li class="social-icon" style="background-color: #dd4b45;">
+            <i
+              class="fab fa-youtube fa-2x"
+              style="margin-top: 10px; padding-left: 27px;"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer__main__form">
+        <div class="footer__container">
+          <div class="footer__row">
+            <div class="footer__main__info">
+              <a href="/index.html">
+                <img
+                  src="https://theme.hstatic.net/1000074340/1000538604/14/footer_logo.png?v=30"
+                  alt=""
+                />
+              </a>
+              <p>Túi xách - Phụ kiện không thể <br />thiếu của phái đẹp</p>
+            </div>
+
+            <div class="footer__main__info">
+              <h4>Liên hệ</h4>
+              <p>Kênh mua sẵm trực tuyến <br />giá hàng đâu Việt Nam</p>
+
+              <i class="fas fa-map-marker-alt"></i>
+              <span>61/2 Quang Trung,P.10 Q.Gò Vấp,TP.HCM</span>
+              <div style="height: 10px;"></div>
+
+              <img
+                src="//theme.hstatic.net/1000074340/1000538604/14/pre_footer_icon_phone.png?v=30"
+                alt=""
+              />
+              <a href="#">(91) 8547 632521</a>
+              <div style="height: 10px;"></div>
+              <img
+                src="//theme.hstatic.net/1000074340/1000538604/14/pre_footer_icon_email.png?v=30"
+                alt=""
+              />
+              <a href="#">hello@egany.com</a>
+            </div>
+            <div class="footer__main__info">
+              <div class="footer__product__list img__info">
+                <h4 style="margin-bottom: 10px;">Giới thiệu</h4>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Sản Phẩm</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Túi xách tay</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Túi cầm tay</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Túi kamicy</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Tạp chí</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hệ thống cửa hàng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__main__info">
+              <div class="footer__guide footer__product__list img__info">
+                <h4>Hướng dẫn</h4>
+                <ul class="footer__list">
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Câu hỏi thường gặp</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn cách tính size</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Chính sách đổi trả</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn bảo quản</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn thanh toán</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <a>Hướng dẫn mua hàng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__main__info">
+              <div class="footer__certification">
+                <h4>Chứng nhận</h4>
+                <img
+                  src="//theme.hstatic.net/1000074340/1000538604/14/payment_img.png?v=30"
+                  alt=""
+                />
+                <br />
+                <a href="">
+                  <img
+                    src="//theme.hstatic.net/1000074340/1000538604/14/register_img.png?v=30"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__contact">
+            <div class="footer__contact__container">
+              <div class="footer__contact__items">
+                <div class="footer__sponsor">
+                  Bản quyền thuộc về <a href="#">EGANY</a>
+                  .
+                  <a href="#">Powered by Haravan</a>
+                  <ul class="main__list" style="text-align: left; padding: 0;">
+                    <li class="mainpage">
+                      <a href="/index.html">Trang chủ</a>
+                    </li>
+                    <li class="mainpage" style="padding-left: 15px;">
+                      <a href="#" class="footer__intro__link">/ Giới thiệu</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- footer  section describe about product location-->
+                <div class="footer__location">
+                  EGANY Co.Ltd - 12345 Quang Trung, Q.Gò Vấp,TP.HCM |
+                  Email:hello@gany.com
+                  <br />
+                  <a href="#">| Hotline</a>
+                  <a href="#">1900.123.789</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- w3school tab link -->
+     <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('tabcontent');
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablinks');
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+        document.getElementById(cityName).style.display = 'block';
+        evt.currentTarget.className += ' active';
+      }
+    </script>
+    <!-- slick link -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- bootstrap script link section -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+  </body>
+</html>
