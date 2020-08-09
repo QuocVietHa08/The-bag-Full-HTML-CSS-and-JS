@@ -107,7 +107,7 @@ html {
 
 .header .header__img {
   width: 190px;
-  heigth: 80px;
+  height: 80px;
 }
 
 .header .header__icon {
@@ -588,9 +588,6 @@ html {
 }
 
 .footer .footer__container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -602,8 +599,6 @@ html {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .footer .footer__row .footer__main__info {
@@ -621,7 +616,7 @@ html {
 .footer .footer__row .footer__main__info a {
   text-decoration: none;
   color: white;
-  magin: 14px 0;
+  margin: 14px 0;
 }
 
 .footer .footer__row .footer__main__info ul {
